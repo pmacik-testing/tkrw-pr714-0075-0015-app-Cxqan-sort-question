@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-quax
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0015-tenant/tkrw-pr714-0075-0015-app/devfile-sample-quax@sha256:bb1513d03f85f6d6342d2d5101bd190e061821ca0c346f0d724f677191ccf010
+        name: my-nodejs
+        resources: {}
+status: {}
